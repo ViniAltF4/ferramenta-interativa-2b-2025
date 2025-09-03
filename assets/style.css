@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-    <main>
-<section id="container">
-
-<article class="cartao">
-
-<div class="cartao__conteudo">
-    <h3>Programação</h3>
-    <div class="cartao__conteudo__pergunta">
-       <p> O que é JavaScript:root {
+:root {
     --text-color: #DBE4EF;
     --card-front-color: #144480;
     --card-back-color: #646fcc;
@@ -73,9 +56,9 @@ footer p {
 }
 
 .cartao__conteudo p {
-
-
-    
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
 }
 
 .cartao__conteudo__pergunta p {
@@ -100,45 +83,4 @@ position:absolute;
 }
 .cartao__conteudo__resposta {
     transform:rotateY(180deg);
-}? </p> 
-    </div>
-    <div class="cartao__conteudo__resposta">
-         O JavaScript é uma linguagem de programação
-    </div>
-   
-</div>
-
-</article>
-
-<article class="cartao">
-        <div class="cartao__conteudo">
-                <h3>Programação</h3>
-                <div class="cartao__conteudo__pergunta">
-                       <p> O que é CSS? </p> 
-                </div>
-                <div class="cartao__conteudo__resposta">
-                        O CSS é uma linguagem de estilização
-                </div>
-        </div>
-</article>
-
-<article class="cartao">
-    <div class="cartao__conteudo">
-            <h3>Programação</h3>
-            <div class="cartao__conteudo__pergunta">
-                   <p> O que é CSS? </p> 
-            </div>
-            <div class="cartao__conteudo__resposta">
-                    O CSS é uma linguagem de estilização
-            </div>
-    </div>
-</article>
-
-</section>
-    </main>
-
-    <footer>
-        <p>Projeto desenvolvido por Luana</p>
-    </footer>
-</body>
-</html>
+}
