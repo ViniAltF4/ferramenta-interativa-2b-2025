@@ -6,7 +6,10 @@
 
 body {
     background: url('img/bg-desktop.webp');
-    font-family: Bai Jamjuree;
+    font-family: "Bai Jamjuree", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
 }
 
 footer {
@@ -33,20 +36,19 @@ footer p {
 }
 
 .cartao {
-    margin: 1rem 1rem;
-
+    margin: 1rem;
     height: 20rem;
     flex-grow: 1;
-    flex-basis: calc(33%-6rem);
+    flex-basis: calc(33% - 6rem); /* Corrigido com o espaço */
 }
 
 .cartao__conteudo {
     background-color: var(--card-front-color);
     text-align: center;
-    /* background-color: aquamarine; */
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
+    font-family: "Bai Jamjuree", sans-serif; /* Garantir que a fonte é aplicada */
 }
 
 .cartao__conteudo h3 {
@@ -67,109 +69,43 @@ footer p {
     margin-top: 4rem;
 }
 
-.cartao__conteudo__pergunta p{
+.cartao__conteudo__pergunta p {
     color: var(--text-color);
     font-weight: 500;
 }
 
-.cartao__conteudo__resposta p{
+.cartao__conteudo__resposta p {
     color: var(--card-back-color);
     font-weight: 700;
 }
 
 .cartao:hover .cartao__conteudo {
     transform: rotateY(180deg);
-
 }
+
 .cartao__conteudo__pergunta,
 .cartao__conteudo__resposta {
-backface-visibility: hidden;
-position:absolute;
-height: 100%;
-width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
+
 .cartao__conteudo__resposta {
-    transform:rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-.bai-jamjuree-extralight {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+@media (max-width: 768px) {
+    #container {
+        padding: 2rem;
+    }
+    .cartao {
+        flex-basis: calc(50% - 2rem);
+    }
 }
 
-.bai-jamjuree-light {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.bai-jamjuree-regular {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.bai-jamjuree-medium {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.bai-jamjuree-semibold {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.bai-jamjuree-bold {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.bai-jamjuree-extralight-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.bai-jamjuree-light-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.bai-jamjuree-regular-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.bai-jamjuree-medium-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.bai-jamjuree-semibold-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.bai-jamjuree-bold-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+@media (max-width: 480px) {
+    .cartao {
+        flex-basis: 100%;
+    }
 }
