@@ -28,17 +28,16 @@ footer p {
 
 #container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start; /* Garante que os cartões fiquem alinhados à esquerda */
+    gap: 3rem; /* Espaço entre os cartões */
     padding: 4rem;
-    gap: 3rem;
 }
 
 .cartao {
-    margin: 1rem 1rem;
+    margin: 1rem;
     height: 20rem;
+    width: 18rem; /* Definindo uma largura fixa para os cartões */
     flex-grow: 1;
-    flex-basis: calc(33% - 6rem); /* Corrigido o cálculo */
 }
 
 .cartao__conteudo {
@@ -47,7 +46,6 @@ footer p {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
-    font-family: "Bai Jamjuree", sans-serif; /* Garantir que a fonte é aplicada */
 }
 
 .cartao__conteudo h3 {
@@ -92,20 +90,4 @@ footer p {
 
 .cartao__conteudo__resposta {
     transform: rotateY(180deg);
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    #container {
-        padding: 2rem;
-    }
-    .cartao {
-        flex-basis: calc(50% - 2rem);
-    }
-}
-
-@media (max-width: 480px) {
-    .cartao {
-        flex-basis: 100%;
-    }
 }
