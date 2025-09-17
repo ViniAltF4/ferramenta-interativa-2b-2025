@@ -15,4 +15,9 @@ criaCartao(
     'Qual a capital da França?',
     'A capital da França é Paris'
 )
+    criaCartao(
+    'Fisica',
+    'Qual é a primeira lei de Newton?',
+    'Lei da Inércia'
+)
 
